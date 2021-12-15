@@ -18,7 +18,7 @@ ul {
   background-color: white;  
   width: 80%;
   margin: 44px auto;
-  font: Arial, Helvetica, sans-serif;
+  /*font: Arial, Helvetica, sans-serif;*/
   line-height: 1.5;
   box-sizing: border-box;
 }
@@ -27,16 +27,19 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 28px;
 }
 
 .title span {
     color: #999999;
+    display: inline-block;
+    margin: 0 32px;
 } 
 
 .title h1 {
     font-size: 58px;
     font-weight: normal;
+    display: inline-block;
+    margin: 0 32px;
 }
 
 .menu {
@@ -46,14 +49,17 @@ ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    
  }
 
  .menu li {
-    padding: 24px 60px;
-    
+    padding: 24px 0;
  }
-
+.menu li:first-child{
+    padding-left: 10px;
+}
+.menu li:last-child{
+    padding-right: 10px;
+}
  .menu a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.7);
@@ -93,7 +99,7 @@ padding-left: 24px;
 }
 
 .leftSide li {
-    list-style-image: url("li.gif");
+    /*list-style-image: url("li.gif");*/
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px 0;
 }
